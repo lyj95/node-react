@@ -238,7 +238,7 @@ Body데이터를 분석(parse)해서 req.body로 출력해주는것
 
 
 
-Client에서 Request를 줘야 하는데 현제 Client가 없으니 POSTMAN을 이용해서 request를 보낸다.
+Client에서 Request를 줘야 하는데 현 Client가 없으니 POSTMAN을 이용해서 request를 보낸다.
 
 
 
