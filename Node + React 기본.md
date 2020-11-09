@@ -38,8 +38,8 @@
 
 boiler-plate 폴더 만들고 **npm 패키지 만들기 **-> package.json
 
-`> C:\nodejs> mkdir boiler-plate`
-`> C:\nodejs> cd boiler-plate`
+`> C:\nodejs> mkdir boiler-plate` <br>
+`> C:\nodejs> cd boiler-plate`<br>
 `> C:\nodejs\boiler-plate> npm init`    -> auther : yeji
 
 
