@@ -52,17 +52,8 @@ boiler-plate 폴더 만들고 **npm 패키지 만들기 **-> package.json
 
 **express js 다운 받기**
 
-Windows PowerShell
-Copyright (C) Microsoft Corporation. All rights reserved.
-**PS C:\nodejs\boiler-plate> npm install express --save**
-npm notice created a lockfile as package-lock.json. You should commit 
-this file.
-npm WARN boiler-plate@1.0.0 No description
-npm WARN boiler-plate@1.0.0 No repository field.                      this file.        
+`PS C:\nodejs\boiler-plate> npm install express --save`
 
-+ express@4.17.1
-added 50 packages from 37 contributors and audited 50 packages in 23.96s
-found 0 vulnerabilities 
 
 
 
@@ -172,15 +163,15 @@ Model은 Schema를 감싸주는 역할
 
 - git 저장소를 만듬
 
-  > git init
+`git init`
 
 - git 상태 확인
 
-  > git status
+`git status`
 
 - git에 잘못 add했을 때 지움
 
-  > git rm --cached [해당이름] -r
+ `git rm --cached [해당이름] -r`
 
 
 
