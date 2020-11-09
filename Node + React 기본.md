@@ -36,9 +36,11 @@
 
 노드 다운로드 후 
 
-boiler-plate 파일 만들고 **npm 패키지 만들기 **-> package.json
+boiler-plate 폴더 만들고 **npm 패키지 만들기 **-> package.json
 
-> C:\nodejs\boiler-plate> npm init 
+`> C:\nodejs> mkdir boiler-plate`
+`> C:\nodejs> cd boiler-plate`
+`> C:\nodejs\boiler-plate> npm init`    -> auther : yeji
 
 
 
