@@ -36,11 +36,9 @@
 
 노드 다운로드 후 
 
-boiler-plate 폴더 만들고 **npm 패키지 만들기 **-> package.json
+boiler-plate 파일 만들고 **npm 패키지 만들기 **-> package.json
 
-`> C:\nodejs> mkdir boiler-plate` <br>
-`> C:\nodejs> cd boiler-plate`<br>
-`> C:\nodejs\boiler-plate> npm init`    -> auther : yeji
+> C:\nodejs\boiler-plate> npm init 
 
 
 
@@ -52,8 +50,17 @@ boiler-plate 폴더 만들고 **npm 패키지 만들기 **-> package.json
 
 **express js 다운 받기**
 
-`PS C:\nodejs\boiler-plate> npm install express --save`
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+**PS C:\nodejs\boiler-plate> npm install express --save**
+npm notice created a lockfile as package-lock.json. You should commit 
+this file.
+npm WARN boiler-plate@1.0.0 No description
+npm WARN boiler-plate@1.0.0 No repository field.                      this file.        
 
++ express@4.17.1
+added 50 packages from 37 contributors and audited 50 packages in 23.96s
+found 0 vulnerabilities 
 
 
 
@@ -163,15 +170,15 @@ Model은 Schema를 감싸주는 역할
 
 - git 저장소를 만듬
 
-`git init`
+  > git init
 
 - git 상태 확인
 
-`git status`
+  > git status
 
 - git에 잘못 add했을 때 지움
 
- `git rm --cached [해당이름] -r`
+  > git rm --cached [해당이름] -r
 
 
 
@@ -238,7 +245,7 @@ Body데이터를 분석(parse)해서 req.body로 출력해주는것
 
 
 
-Client에서 Request를 줘야 하는데 현 Client가 없으니 POSTMAN을 이용해서 request를 보낸다.
+Client에서 Request를 줘야 하는데 현제 Client가 없으니 POSTMAN을 이용해서 request를 보낸다.
 
 
 
@@ -395,13 +402,15 @@ how?
 
 
 
+## 2. React JS
 
+- 프레임워크라고 알고 있지만 **라이브러리**(Library)다
 
-
-
-
-
-
+- Components : moduler과 비슷하게 컴포넌트로 이루어져 있어서 reusable이 뛰어남.
+- Virtual DOM : 만약 10개의 리스트가있다. 그중에 한가지의 리스트만 업데이트됨. 그 바뀐 한가지 아이템만 DOM에서 바꿔준다 !
+  1. JSX(우선HTML으로 알아두기)을 렌더링 한다. 그러면 Virtual DOM이 Update가 됨
+  2. Virtual DOM이 이전 virtual DOM에서 찍어둔 Snapshot과 비교를 해서 바뀐 부분을 찾는다. 이과정을 "diffing"이라고 부름
+  3. 그러면 그 바뀐 부분만 Real DOM에서 바꿔준다.
 
 
 
