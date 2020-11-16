@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "backend": "nodemon index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "yeji",
