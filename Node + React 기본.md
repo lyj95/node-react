@@ -376,7 +376,8 @@ JSON Web Token (JWT) 은 웹표준 ([RFC 7519](https://tools.ietf.org/html/rfc75
 
 why & what?
 
-	1. 페이지 이동 때마다 로그인되었는지 안되어있는지, 관리자 유저인지등을 체크
+1. 페이지 이동 때마다 로그인되었는지 안되어있는지, 관리자 유저인지등을 체크
+
  	2. 글을 쓸 때나 지울 때 같은데 권한이 있는지 체크
 
 how?
@@ -404,6 +405,8 @@ how?
 
 ## 2. React JS
 
+### #15 리액트란?
+
 - 프레임워크라고 알고 있지만 **라이브러리**(Library)다
 
 - Components : moduler과 비슷하게 컴포넌트로 이루어져 있어서 reusable이 뛰어남.
@@ -414,22 +417,123 @@ how?
 
 
 
+### #16 Create-React-App
+
+create-react-app Command를 이용해 Babel과 Webpack을 자동으로 사용가능
+
+-> Babel : 최신 자바스크립트 문법을 지원하지 않는 브라주저들을 위해서 최신 자바스크립트 문법을 구형브라우저에서도 돌 수 있게 변환시켜줌 
+
+-> Webpack : 웹사이트를 만들 때 복잡하게 있는 모듈들을 웹팩을 이용해서 번들(묶어주는 것)을 시켜줌
+
+
+
+- client 와 server로 나누어 clinet 폴더에서 react js 를 다룬다.
+
+  1. config / middleware / models / index.js 는 server 폴더로 옮긴다.
+
+  2. `cd client` 로 client 디렉토리에 들어와 `npx create-react-app .`으로 다운받음 
+
+     > 원래는 npm install -g create-react-app 이렇게 했었다.
 
 
 
 
 
+### #17 npm npx
+
+NPM(Node package manager)
+
+**npm 이란?**
+
+	- 레지스트리(저장소) 역할을 함
+	- package.json에서 확인 할 수 있다.
+
+
+
+npm install globally ! [-g] 
+
+**%AppData%/npm** on window 에 저장됨
+
+
+
+**npx ?**
+
+- npx가 npm registry에서 create-react-app을 찾아서(look up) **다운로드 없이** 실행시켜준다.
+- disk space를 낭비하지 않을 수 있다.
+- 항상 최신 버전을 사용할 수 있다.
 
 
 
 
 
+### #18 구조 설명
+
+App.js -> 
+
+index.js -> 
+
+index.html ->
+
+- Webpack은 src 디렉토리만 관리해줌 (public 디렉토리는 관리 X) -> images는 되도록 src디렉토리에 넣어주어 관리해주는 것이 좋음
 
 
 
+react 실행하는 법
+
+`cd client`
+
+`npm run start`
+
+
+
+
+
+### #19 CRA to Our Boilerplate
+
+Boiler Plate에 특성화된 구조
+
+- _actions | _reducers : Redux 를 위한 폴더들
+- components/views : Page들을 넣는다
+- components/views/Sections : 해당 페이지에 관련된 css 파일이나, component들을 넣는다.
+
+
+
+- App.js : Routing 관련 일을 처리한다.
+- Config.js : 환경 변수같은 것들을 정하는 곳이다.
+- hoc : Higher Order Component의 약자로 (여러가지 컴포넌트를 넣어두어 해당 유저가 해당 페이지에 들어갈 자격이 되는지를 선별해 해당 component에 가게 해주고 아니면 다른 페이지로 보내버림)
+- utils : 여러 군데에서 쓰일 수 있는 것들을 모아두어 어디서든 쓸 수 있게 해줌
+
+
+
+![image-20201116230728671](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20201116230728671.png)
+
+
+
+> es7 다운 받으면 rfce : functional compoent | rcc : class compoent
+
+
+
+
+
+### #20 React Router Dom
+
+https://reactrouter.com/web/example/basic
+
+- reat router dom 설치
+
+  `cd client`
+
+  `npm install react-router-dom --save`
+
+
+
+
+
+### #21 데이터 Flow & Axious
 
 
 
 
 
 > 출처 : inflearn.com/course/따라하며-배우는-노드-리액트-기본/dashboard
+
