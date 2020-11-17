@@ -531,9 +531,39 @@ https://reactrouter.com/web/example/basic
 
 ### #21 데이터 Flow & Axious
 
+React JS 부분에서 Request를 보내면 되는데 그 때 사용 할게 AXIOUS
+
+jQeury를 사용할 때 AJAX라고 보면됨.
+
+`npm install axios --save` 로 다운 
 
 
 
+
+
+### #22 CORS 이슈, Proxy 설정
+
+Cors 정책 때문에 Cross-Origin Resource Sharing 보안을 위해
+
+Proxy
+
+https://create-react-app.dev/docs/proxying-api-requests-in-development
+
+-> Configuring the Proxy Manually
+
+
+
+client 부분에
+
+` npm install http-proxy-middleware --save`
+
+
+
+-> src/setupProxy.js
+
+
+
+ant design
 
 > 출처 : inflearn.com/course/따라하며-배우는-노드-리액트-기본/dashboard
 
