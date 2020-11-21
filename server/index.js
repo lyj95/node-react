@@ -1,6 +1,6 @@
 const express = require('express')  // express 모듈을 가져옴
-const app = express()               // 새로운 express app을 만듬
-const port = 5000                   // 5000번 port를 백서버로 둠
+const app = express();               // 새로운 express app을 만듬
+const port = 5000;                   // 5000번 port를 백서버로 둠
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const config = require('./config/key');
@@ -21,6 +21,14 @@ mongoose.connect(config.mongoURI,
     useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false
   }).then(() => console.log('MongoDB Connected ...'))
   .catch(err => console.log(err))
+
+// react 연결
+app.get('/api/hello', (req, res) => {
+  res.send('Hello ~!~! 안녕 client와 서버 연결');
+})
+
+
+
 
 
 
