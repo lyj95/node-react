@@ -180,7 +180,15 @@ Model은 Schema를 감싸주는 역할
 
   > git rm --cached [해당이름] -r
 
+- git remote
 
+  > git remote add origin [git 주소]
+
+- git clone
+
+  > git clone [git 주소]
+
+- git push -u origin master
 
 ![image-20201028183037298](C:\Users\User\AppData\Roaming\Typora\typora-user-images\image-20201028183037298.png)
 
